@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+}
+
+body, p, a, button {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 0 20px;
+    box-sizing: content-box;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid gray;
+    margin-bottom: 50px;
+}
+
+.logo {
+    width: 120px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    place-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.menu a {
+    text-decoration: none;
+    font-size: 20px;
+    color: darkblue;
+}
+
+.menu a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    display: block;
+    background: darkblue;
+}
+
+.menu a:hover::after {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.products-grid {
+    grid-template-columns: repeat( auto-fit, minmax(225px, 1fr) );
+    display: grid;
+    gap: 12px;
+}
+
+.products-grid .product {
+    border: 1px solid lightgray;
+    padding: 20px;
+    box-sizing: content-box;
+    text-align: center;
+}
+
+.products-grid img{
+    width: 100%;
+}
+
+.products-grid .product button {
+    cursor: pointer;
+    background-color: lightslategray;
+    color: white;
+    border: 1px solid lightslategray;
+    font-size: 16px;
+    font-weight: 100;
+    font-weight: 100;
+    border-radius: 12px;
+    padding: 5px 30px;
+}
+
+.products-grid .product button:hover {
+    transition: all 0.2s ease;
+    background-color: transparent;
+    color: lightslategrey;
+}
+
+.footer {
+    background: black;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.footer .content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin: auto;
+}
+
+.footer ul {
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+    padding: 20px 0px;
+}
